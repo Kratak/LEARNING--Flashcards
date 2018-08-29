@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import Card from './cards/card'
 import './App.css';
-
 
 
 class App extends Component {
@@ -9,13 +9,14 @@ class App extends Component {
     this.state={
       cardNumber:0,
       cardLimit: 4,
-      1: '1.Pierwszy tekst',
-      2: '2.drugi tekst',
-      3: '3.trzeci tekst',
-      4: '4.czawrty tekst',
+      1: Card[1],
+      2: Card[2],
+      3: Card[3],
+      4: Card[4],
     };
   }
   render() {
+    
     return (
       <div className="App">
       <br/>
@@ -27,6 +28,7 @@ class App extends Component {
       passing this number to"this.state[this.state.cardNumber]",<br/>
       and render message on scren. </p>
       <br/>
+      
       </div>
       
     );
