@@ -8,7 +8,7 @@ class App extends Component {
     super();
     this.state={
       cardNumber:0,
-      cardLimit: 4,
+      cardLimit: 2,
       1: Card[1],
       2: Card[2],
       3: Card[3],

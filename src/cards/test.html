@@ -1,14 +1,32 @@
 <html>
    <head>
-      <title>JavaScript constructor() Method</title>
+      <title>Javascript Method toExponential()</title>
    </head>
    
    <body>
-      
       <script type="text/javascript">
-         var num = new Number( 177.1234 );
-         document.write("num.constructor() is : " + num.constructor); 
+
+         var num=77.1234;
+         var val = num.toExponential(); 
+         document.write("num.toExponential() is : " + val );
+         document.write("<br />"); 
+         
+         val = num.toExponential(4);
+         document.write("num.toExponential(4) is : " + val );
+         document.write("<br />"); 
+         
+         val = num.toExponential(2); 
+         document.write("num.toExponential(2) is : " + val); 
+         document.write("<br />"); 
+         
+         val = 77.1234.toExponential(); 
+         document.write("77.1234.toExponential()is : " + val ); 
+         document.write("<br />"); 
+         
+         val = 77.1234.toExponential(); 
+         document.write("77 .toExponential() is : " + val); 
       </script>
    
    </body>
 </html>
+
