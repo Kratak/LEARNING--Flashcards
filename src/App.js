@@ -8,11 +8,16 @@ class App extends Component {
     super();
     this.state={
       cardNumber:0,
-      cardLimit: 2,
+      cardLimit: 5,
       1: Card[1],
       2: Card[2],
       3: Card[3],
-      4: Card[4],
+      5: Card[5],
+      6: Card[6],
+      7: Card[7],
+      8: Card[8],
+      9: Card[9],
+      10: Card[10],
     };
   }
   render() {

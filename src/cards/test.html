@@ -1,32 +1,24 @@
 <html>
    <head>
-      <title>Javascript Method toExponential()</title>
+      <title>JavaScript toPrecision() Method </title>
    </head>
    
    <body>
+   
       <script type="text/javascript">
 
-         var num=77.1234;
-         var val = num.toExponential(); 
-         document.write("num.toExponential() is : " + val );
+         var num = new Number(7.123456);
+         document.write("num.toPrecision() is " + num.toPrecision());
          document.write("<br />"); 
          
-         val = num.toExponential(4);
-         document.write("num.toExponential(4) is : " + val );
+         document.write("num.toPrecision(4) is " + num.toPrecision(4)); 
          document.write("<br />"); 
          
-         val = num.toExponential(2); 
-         document.write("num.toExponential(2) is : " + val); 
+         document.write("num.toPrecision(2) is " + num.toPrecision(2)); 
          document.write("<br />"); 
          
-         val = 77.1234.toExponential(); 
-         document.write("77.1234.toExponential()is : " + val ); 
-         document.write("<br />"); 
-         
-         val = 77.1234.toExponential(); 
-         document.write("77 .toExponential() is : " + val); 
+         document.write("num.toPrecision(1) is " + num.toPrecision(1)); 
       </script>
    
    </body>
 </html>
-
