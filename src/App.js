@@ -8,10 +8,11 @@ class App extends Component {
     super();
     this.state={
       cardNumber:0,
-      cardLimit: 5,
+      cardLimit: 10,
       1: Card[1],
       2: Card[2],
       3: Card[3],
+      4: Card[4],
       5: Card[5],
       6: Card[6],
       7: Card[7],
@@ -29,9 +30,9 @@ class App extends Component {
       <br/>
       <br/>
       <output>Text number: <br/>&nbsp; {this.state[this.state.cardNumber]}</output>
-      <p>How its works? "onlick" generte number from 1 - {this.state.cardLimit}, <br/>
+      <p>How its works? "onclick" generate number from 1 - {this.state.cardLimit}, <br/>
       passing this number to"this.state[this.state.cardNumber]",<br/>
-      and render message on scren. </p>
+      and render message on screen. </p>
       <br/>
       
       </div>
