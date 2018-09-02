@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Card from './cards/card'
 import './App.css';
+import './cards/Card.css'
 
 
 class App extends Component {
@@ -26,10 +27,11 @@ class App extends Component {
     return (
       <div className="App">
       <br/>
-      <button onClick={this.randomCard.bind(this)}>Losuj Fish/ke</button>
+      <button className="random_button c_type-js" 
+      onClick={this.randomCard.bind(this)}>Pick flashcard</button>
       <br/>
       <br/>
-      <output>Text number: <br/>&nbsp; {this.state[this.state.cardNumber]}</output>
+      <output>{this.state[this.state.cardNumber]}</output>
       <p>How its works? "onclick" generate number from 1 - {this.state.cardLimit}, <br/>
       passing this number to"this.state[this.state.cardNumber]",<br/>
       and render message on screen. </p>
